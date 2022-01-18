@@ -1,0 +1,14 @@
+[programs.localnet]
+stable_pool = "ERbfq15MzC4EHzGAPK85PpvvMFfFjEzijqnuUzkTghmd"
+stable_pool_faucet = "8cWxdanpMMudwFexcZmmmZEZBBx2FzQFE2RjPNu7VgMB"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "http://127.0.0.1:8899"
+wallet = "./test-keypair.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
+#analyze = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 analyze/analyze.ts"
